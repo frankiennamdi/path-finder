@@ -1,0 +1,18 @@
+spring:
+
+logging:
+    level:
+      .: INFO
+      org.springframework.web: INFO
+
+server:
+  servlet:
+    context-path: /
+
+path-finder:
+  graph:
+    file: city.txt
+    is-directed: false
+
+
+
