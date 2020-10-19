@@ -17,6 +17,6 @@ public class RestResponseEntityExceptionHandler
 
   @ExceptionHandler({IllegalArgumentException.class})
   public ResponseEntity<Object> handleIllegalArgumentException(Exception ex, WebRequest request) {
-    return new ResponseEntity<>("Bad Request", new HttpHeaders(), HttpStatus.BAD_REQUEST);
+    return new ResponseEntity<>(String.format("Bad Request: %s", ex.getMessage()), new HttpHeaders(), HttpStatus.BAD_REQUEST);
   }
 }

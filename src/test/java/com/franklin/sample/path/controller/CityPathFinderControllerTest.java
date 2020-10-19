@@ -72,6 +72,6 @@ public class CityPathFinderControllerTest {
             .param("origin", "Boston")
             .param("destination", "No Where"))
             .andExpect(status().isBadRequest())
-            .andExpect(content().string("Bad Request"));
+            .andExpect(content().string("Bad Request: No such vertex No Where"));
   }
 }
