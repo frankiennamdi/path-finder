@@ -2,6 +2,9 @@ package com.franklin.sample.path.service;
 
 import java.util.*;
 
+/**
+ * Graph of the connections of the cities
+ */
 public class CityGraph {
   // store the vertices in a map for improved load and processing time.
   private final Map<String, Vertex<String>> vertices;

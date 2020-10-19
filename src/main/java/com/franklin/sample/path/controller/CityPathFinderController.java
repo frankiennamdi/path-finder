@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(CityPathFinderController.ENDPOINT)
 public class CityPathFinderController {
-  public static final String ENDPOINT = "/connected";
+  static final String ENDPOINT = "/connected";
   private final CityPathFinder cityPathFinder;
 
   @Autowired

@@ -2,6 +2,10 @@ package com.franklin.sample.path.service;
 
 import java.util.*;
 
+/**
+ * Vertex is comprised of data and its neighbours. This is as a list can form a Graph.
+ * @param <T>
+ */
 public class Vertex<T extends Comparable<T>> {
 
   private final T info;

@@ -18,6 +18,9 @@ import java.util.Map;
 import java.util.Stack;
 import java.util.stream.Stream;
 
+/**
+ * Holds the {@link CityGraph} and the search algorithm processing the graph.
+ */
 @Component
 public class CityPathFinder {
   private static final Logger LOGGER = LoggerFactory.getLogger(CityPathFinder.class);
