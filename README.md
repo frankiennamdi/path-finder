@@ -23,7 +23,7 @@ Newark, Boston
 Trenton, Albany
 ```
 
-# API Documentation
+# API documentation and testing tool using swagger
 
 http://localhost:8080/swagger-ui/#/city-path-finder-controller
 
@@ -69,13 +69,14 @@ Where data is the folder where the city.txt file lives under the map folder.
 
 This section demonstrate call to invoke the services the application provides. 
 
-## Get Path
+## Find Path using curl
+
+As mentioned earlier the swagger ui can be used to test the service. In addition, you can also use your browser.
 
 ```
 curl -X GET -G --data-urlencode "origin=Boston" --data-urlencode "destination=New York" http://localhost:8080/connected
 ```
 
-Or preferably use your browser.
 
 
 

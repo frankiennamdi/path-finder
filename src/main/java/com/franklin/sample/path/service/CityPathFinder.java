@@ -64,8 +64,8 @@ public class CityPathFinder {
   }
 
   public boolean pathExist(String from, String to) {
-    Vertex<String> fromVertex = cityGraph.getVertex(from);
-    Vertex<String> toVertex = cityGraph.getVertex(to);
+    Vertex<String> fromVertex = cityGraph.getVertex(from.trim());
+    Vertex<String> toVertex = cityGraph.getVertex(to.trim());
     Stack<Vertex<String>> cities = new Stack<>();
     Map<Vertex<String>, Vertex<String>> visitedVertices = new HashMap<>();
     visitedVertices.put(fromVertex, fromVertex);
